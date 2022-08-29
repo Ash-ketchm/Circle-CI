@@ -21,7 +21,7 @@ jobs:
         - run:
             name: Install Dependencies
             command: timeout 1m lscpu
-    Devop3:
+    DevopC:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
@@ -36,4 +36,4 @@ workflows:
             - Devop
             - Devop1
             - Devop2
-            - Devop3
+            - DevopC
